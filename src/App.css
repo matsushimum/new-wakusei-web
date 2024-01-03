@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+*{
+    margin:0;
+    padding:0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*pc表示*/
+.header{
+    background-color:#fa8072;
+    height:120px;
+    display:flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.headerFAQ{
+    color:white;
+    font-size:30px;
+    font-family:serif;
+    margin-top:50px;
+    margin-left:400px;
+
+}
+
+.headerKiyaku{
+    color:white;
+    font-size:30px;
+    font-family:serif;
+    padding-top:50px;
+    padding-left:100px;
+}
+
+.headerLogo{
+    height:100px;
+    padding-top:7px;
+    padding-left:200px;
+}
+
+.headerMission{
+    color:white;
+    font-size:30px;
+    font-family:serif;
+    padding-top:50px;
+    padding-left:100px;
+}
+
+/*Hero*/
+
+.background{
+    height:750px;
+    background-image: url("./Image/wakusei-concept-art.png");
+    background-size:cover;/*画面一杯に表示*/
+    background-attachment:fixed;/*画面固定*/
+}
+
+.background::before{
+    animation-name:fade;
+    animation-duration:5s;
+    animation-fill-mode:forwards;
+    background-color:rgba(0,0,0,0.5);
+    position:absolute;
+    top:1000;
+    right:0;
+    bottom:1000;
+    left:0;
+    content:" ";
+    height:750px;
+}
+
+.DiscordLogo{
+    position:absolute;
+    height:100px;
+    top:230px;
+    left:100px;
+    animation-name:fade;
+    animation-duration:1s;
+}
+
+.title{
+    color:white;
+    position:absolute;
+    font-family:serif;
+    font-size:250px;
+    top:300px;
+    left:130px;
+    font-weight:bold;
+    animation:fade;
+    animation-duration:3s;
+}
+
+.border1 {
+    border-top: 1px solid #b4b4b4;
+    text-align: center;
+    width: 1300px;
+    position: absolute;
+    top: 1750px;
+    left: 310px;
   }
+
+/*HomeMain*/
+
+.content1{
+    font-family:"yurumoji",sans-serif;
+    animation:fadeUpanime 0.5s ease 0s forwards, scale 0.5s ease 1.2s forwards;
+    opacity:0s;
+    position:absolute;
+    text-align:center;
+    text-align:center;
+    margin: 230px 0px 0px 620px;
+    padding: 100px 120px 100px 120px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+@keyframes fade {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face{
+    font-family:"yurumoji";
+    src:url("./Font/yurumoji.ttf") format("truetype");
 }
