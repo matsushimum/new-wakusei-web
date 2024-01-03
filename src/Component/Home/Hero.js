@@ -6,7 +6,7 @@ function Hero(){
         <>
             <div className="background">
                 <img src={DiscordLogo} class="DiscordLogo" alt="DiscordLogo"/>
-                <h1 className="title">わくせい</h1>
+                <h1 className="title">わくせいになります</h1>
             </div>
         </>
     )
