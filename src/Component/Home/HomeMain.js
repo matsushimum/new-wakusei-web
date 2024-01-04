@@ -22,22 +22,16 @@ function HomeMain(){
         },[])
     
         if(scrollY>=1000){
-            document.getElementById("homeContent1").classList.add("invisible");
-        }
-
-        if(scrollY>=2000){
-            document.getElementById("homeContent2").classList.add("invisible");
-        }
-
-        if(scrollY>=3000){
-            document.getElementById("homeContent3").classList.add("invisible");
+            document.getElementById("homeContent1").classList.add("homeContent1");
+            document.getElementById("homeAlien1").classList.add("homeAlien1");
+            document.getElementById("homeAlien2").classList.add("homeAlien2");            
         }
 
     return(
     <>
-        <div className="homeContent1" id="homeContent1">
-            <img src={alien1} className="homeAlien1" alt="homeAlien1" />
-            <img src={alien2} className="homeAlien2" alt="homeAlien2" />
+        <div className="" id="homeContent1">
+            <img src={alien1} className="" id="homeAlien1" alt="homeAlien1" />
+            <img src={alien2} className="" id="homeAlien2" alt="homeAlien2" />
             <h2>インターネットにぽつりとうかぶちいさな星</h2>
             <h2>まわりのほしぼしからたくさんの人が集います</h2>
             <h2>静かに作業集中したい人</h2>
