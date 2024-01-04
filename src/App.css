@@ -85,28 +85,57 @@
     animation-duration:3s;
 }
 
-.border1 {
-    border-top: 1px solid #b4b4b4;
-    text-align: center;
-    width: 1300px;
-    position: absolute;
-    top: 1750px;
-    left: 310px;
-  }
-
 /*HomeMain*/
-
-.content1{
+.homeContent1{
     font-family:"yurumoji",sans-serif;
-    animation:fadeUpanime 0.5s ease 0s forwards, scale 0.5s ease 1.2s forwards;
-    opacity:0s;
-    position:absolute;
     text-align:center;
-    text-align:center;
-    margin: 230px 0px 0px 620px;
-    padding: 100px 120px 100px 120px;
+    top:50px;
+    position:relative;
 }
 
+.homeAlien1{
+    position:relative;
+    height:150px;
+}
+
+.homeAlien2{
+    position:relative;
+    height:150px;
+}
+
+.homeContent2{
+    font-family:"yurumoji",sans-serif;
+    text-align:center;
+    top:50px;
+    position:relative;
+}
+
+.homeAlien3{
+    position:relative;
+    height:150px;
+}
+
+.homeAlien4{
+    position:relative;
+    height:150px;
+}
+
+.homeContent3{
+    font-family:"yurumoji",sans-serif;
+    text-align:center;
+    top:50px;
+    position:relative;
+}
+
+.homeAlien5{
+    position:relative;
+    height:150px;
+}
+
+.homeAlien6{
+    position:relative;
+    height:150px;
+}
 
 @keyframes fade {
     0%{
