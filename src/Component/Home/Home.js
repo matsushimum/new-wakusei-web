@@ -8,6 +8,7 @@ function Home(){
         <>
         <Header />
         <Hero />
+        <div class="whiteback" />
         <HomeMain />
         </>
     )
