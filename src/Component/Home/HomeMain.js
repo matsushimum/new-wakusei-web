@@ -63,6 +63,7 @@ function HomeMain(){
             <h2>わくせいの仲間たちとの交流を楽しもう</h2>
         </div>
         <h1 className="EveryOneWaiting">みんな待ってるよ</h1>
+        <br />
         <button onClick="GoWakusei()">ボタン</button>
     </>
     )
