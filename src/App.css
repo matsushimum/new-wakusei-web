@@ -86,13 +86,19 @@
 }
 
 /*HomeMain*/
+
 .homeContent1{
-    font-family:"yurumoji",sans-serif;
+    font-family:"yurumoji";
     text-align:center;
     position:relative;
     margin-top:250px;
-    opacity:0s;
-    animation:fadeanime 0.5s ease 0s forwards,scale 0.5s ease 1.2s forwards;
+    color:rgb(36, 36, 36);
+    opacity:0;
+    width:100%
+}
+
+.homeContent1-fadeUp{
+    animation:fadeUpAnime 0.5s ease 0s forwards,scale 0.5s ease 1.2s forwards;
 }
 
 .homeAlien1{
@@ -101,7 +107,7 @@
     top:250px;
     right:160px;
     opacity:0;
-    animation:fadeRightAnime 0.5s ease 0.7s forwards,rotateleft 0.5s ease 1.3s forwards;
+    animation:fadeRightAnime 0.5s ease 0.7s forwards,rotateLeft 0.5s ease 1.3s forwards;
 }
 
 .homeAlien2{
@@ -110,7 +116,7 @@
     top:300px;
     left:150px;
     opacity:0;
-    animation:fadeleftanime 0.5s ease 0.7s forwards,rotateright 0.5s ease 1.6s forwards;
+    animation:fadeLeftAnime 0.5s ease 0.7s forwards,rotateRight 0.5s ease 1.6s forwards;
 }
 
 .homeContent1 h2{
@@ -119,10 +125,16 @@
 }
 
 .homeContent2{
-    font-family:"yurumoji",sans-serif;
+    font-family:"yurumoji";
     text-align:center;
     margin-top:250px;
     position:relative;
+    color:rgb(36, 36, 36);
+    opacity:0;
+}
+
+.homeContent2-fadeUp{
+    animation:fadeUpAnime 0.5s ease 0s forwards,scale 0.5s ease 1.2s forwards;
 }
 
 .homeAlien3{
@@ -130,13 +142,17 @@
     height:150px;
     top:240px;
     right:170px;
+    opacity:0;
+    animation:fadeRightAnime 0.5s ease 0.7s forwards,rotateLeft 0.5s ease 1.3s forwards;
 }
 
 .homeAlien4{
     position:relative;
     height:150px;
     left:170px;
-    top:270px;
+    top:250px;
+    opacity:0;
+    animation:fadeLeftAnime 0.5s ease 0.7s forwards,rotateRight 0.5s ease 1.6s forwards;
 }
 
 .homeContent2 h2{
@@ -148,6 +164,12 @@
     text-align:center;
     margin-top:250px;
     position:relative;
+    color:rgb(36, 36, 36);
+    opacity:0;
+}
+
+.homeContent3-fadeUp{
+    animation:fadeUpAnime 0.5s ease 0s forwards,scale 0.5s ease 1.2s forwards;
 }
 
 .homeAlien5{
@@ -155,6 +177,8 @@
     height:150px;
     top:250px;
     right:170px;
+    opacity:0;
+    animation:fadeRightAnime 0.5s ease 0.7s forwards,rotateLeft 0.5s ease 1.3s forwards;
 }
 
 .homeAlien6{
@@ -162,6 +186,8 @@
     height:150px;
     top:180px;
     left:170px;
+    opacity:0;
+    animation:fadeLeftAnime 0.5s ease 0.7s forwards,rotateRight 0.5s ease 1.6s forwards;
 }
 
 .homeContent3 h2{
@@ -171,7 +197,11 @@
 .EveryOneWaiting{
     text-align:center;
     font-family:"yurumoji";
-    margin:500px;
+    margin-top:700px;
+}
+
+.buttonGoWakusei{
+    margin:0 auto;
 }
 
 @keyframes fade {
@@ -180,6 +210,18 @@
     }
     100%{
         opacity:1;
+    }
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity:0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity:1;
+        transform:translateY(0);
     }
 }
 
@@ -207,12 +249,21 @@
     }
 }
 
-@keyframes rotateleft {
+@keyframes rotateLeft {
     from {
       transform: rotate(0deg);
     }
     to {
       transform: rotate(-20deg);
+    }
+}
+
+@keyframes rotateRight {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(20deg);
     }
 }
 
