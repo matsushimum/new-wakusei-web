@@ -6,6 +6,7 @@ import alien3 from "../../Image/alien3.png";
 import alien4 from "../../Image/alien4.png";
 import alien5 from "../../Image/alien5.png";
 import alien6 from "../../Image/alien6.png";
+import Infinity from "./Infinity.js";
 
 
 
@@ -75,7 +76,8 @@ function HomeMain(){
             <h2>わくせいの仲間たちとの交流を楽しもう</h2>
         </div>
         <h1 className="EveryOneWaiting">みんな待ってるよ</h1>
-        <button onClick="GoWakusei()" class="buttonGoWakusei" id="buttonGoWakusei">ボタン</button>
+        <button class="buttonGoWakusei" id="buttonGoWakusei">参加する</button>
+        <Infinity />
     </>
     )
 }
