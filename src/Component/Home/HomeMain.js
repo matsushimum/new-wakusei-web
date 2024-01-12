@@ -10,12 +10,16 @@ import Infinity from "./Infinity.js";
 
 
 
-function HomeMain(){
+const HomeMain=()=>{
 
         const[scrollY,setScrollY] = useState(0);
     
         const handleScroll= () =>{
             setScrollY(window.scrollY)
+        }
+
+        function GoDiscord(){
+            window.location.replace("https://discord.gg/dm5399cQxS");
         }
     
         useEffect(()=>{
@@ -38,6 +42,14 @@ function HomeMain(){
             document.getElementById("homeContent3").classList.add("homeContent3-fadeUp");
             document.getElementById("homeAlien5").classList.add("homeAlien5");
             document.getElementById("homeAlien6").classList.add("homeAlien6");
+        }
+
+        if(scrollY>=3300){
+            document.getElementById("EveryOneWaiting").classList.add("EveryOneWaiting-fadeUp");
+        }
+
+        if(scrollY>=3300){
+            document.getElementById("buttonGoWakusei").classList.add("buttonGoWakusei-fadeUp");
         }
 
     return(
@@ -75,11 +87,13 @@ function HomeMain(){
             <h2>誰でもおじょう様になれるおじょう様部などヘンテコなものもあります</h2>
             <h2>わくせいの仲間たちとの交流を楽しもう</h2>
         </div>
-        <h1 className="EveryOneWaiting">みんな待ってるよ</h1>
-        <button class="buttonGoWakusei" id="buttonGoWakusei">参加する</button>
+        <h1 className="EveryOneWaiting" id="EveryOneWaiting">みんな待ってるよ</h1>
+        <button type="button" onClick={GoDiscord} class="buttonGoWakusei" id="buttonGoWakusei">参加する</button>
         <Infinity />
     </>
     )
 }
 
 export default HomeMain;
+
+//ディスコードリンク https://discord.gg/dm5399cQxS
