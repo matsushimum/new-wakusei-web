@@ -3,6 +3,10 @@
     padding:0;
 }
 
+html,body{
+    overflow-x:hidden;
+}
+
 /*pc表示*/
 .header{
     background-color:#fa8072;
@@ -86,13 +90,18 @@
 }
 
 /*HomeMain*/
+
 .homeContent1{
-    font-family:"yurumoji",sans-serif;
+    font-family:"yurumoji";
     text-align:center;
     position:relative;
     margin-top:250px;
-    opacity:0s;
-    animation:fadeanime 0.5s ease 0s forwards,scale 0.5s ease 1.2s forwards;
+    color:rgb(36, 36, 36);
+    opacity:0;
+}
+
+.homeContent1-fadeUp{
+    animation:fadeUpAnime 0.5s ease 0s forwards,scale 0.5s ease 1.2s forwards;
 }
 
 .homeAlien1{
@@ -101,7 +110,7 @@
     top:250px;
     right:160px;
     opacity:0;
-    animation:fadeRightAnime 0.5s ease 0.7s forwards,rotateleft 0.5s ease 1.3s forwards;
+    animation:fadeRightAnime 0.5s ease 0.7s forwards,rotateLeft 0.5s ease 1.3s forwards;
 }
 
 .homeAlien2{
@@ -110,19 +119,27 @@
     top:300px;
     left:150px;
     opacity:0;
-    animation:fadeleftanime 0.5s ease 0.7s forwards,rotateright 0.5s ease 1.6s forwards;
+    animation:fadeLeftAnime 0.5s ease 0.7s forwards,rotateRight 0.5s ease 1.6s forwards;
 }
 
 .homeContent1 h2{
     position:relative;
-    margin:20px;
+    margin-top:20px;
+    margin-bottom:20px;
+    width:100%;
 }
 
 .homeContent2{
-    font-family:"yurumoji",sans-serif;
+    font-family:"yurumoji";
     text-align:center;
     margin-top:250px;
     position:relative;
+    color:rgb(36, 36, 36);
+    opacity:0;
+}
+
+.homeContent2-fadeUp{
+    animation:fadeUpAnime 0.5s ease 0s forwards,scale 0.5s ease 1.2s forwards;
 }
 
 .homeAlien3{
@@ -130,13 +147,17 @@
     height:150px;
     top:240px;
     right:170px;
+    opacity:0;
+    animation:fadeRightAnime 0.5s ease 0.7s forwards,rotateLeft 0.5s ease 1.3s forwards;
 }
 
 .homeAlien4{
     position:relative;
     height:150px;
     left:170px;
-    top:270px;
+    top:250px;
+    opacity:0;
+    animation:fadeLeftAnime 0.5s ease 0.7s forwards,rotateRight 0.5s ease 1.6s forwards;
 }
 
 .homeContent2 h2{
@@ -148,6 +169,12 @@
     text-align:center;
     margin-top:250px;
     position:relative;
+    color:rgb(36, 36, 36);
+    opacity:0;
+}
+
+.homeContent3-fadeUp{
+    animation:fadeUpAnime 0.5s ease 0s forwards,scale 0.5s ease 1.2s forwards;
 }
 
 .homeAlien5{
@@ -155,6 +182,8 @@
     height:150px;
     top:250px;
     right:170px;
+    opacity:0;
+    animation:fadeRightAnime 0.5s ease 0.7s forwards,rotateLeft 0.5s ease 1.3s forwards;
 }
 
 .homeAlien6{
@@ -162,6 +191,8 @@
     height:150px;
     top:180px;
     left:170px;
+    opacity:0;
+    animation:fadeLeftAnime 0.5s ease 0.7s forwards,rotateRight 0.5s ease 1.6s forwards;
 }
 
 .homeContent3 h2{
@@ -171,7 +202,47 @@
 .EveryOneWaiting{
     text-align:center;
     font-family:"yurumoji";
-    margin:500px;
+    margin-top:700px;
+    color:rgb(36, 36, 36);
+    opacity:0;
+}
+
+.EveryOneWaiting-fadeUp{
+    animation:fadeUpAnime 0.5s ease 0s forwards;
+}
+
+.buttonGoWakusei{
+    margin-left:820px;;
+    margin-top:300px;
+    margin-bottom:300px;
+    width:300px;
+    height:100px;
+    font-size:30px;
+    font-family:"yurumoji";
+    opacity:0;
+
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 4px;
+    color: #ffffff;
+    background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    border-bottom: solid 3px #c58668;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+}
+
+.buttonGoWakusei:active {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+}
+
+.buttonGoWakusei-fadeUp{
+    animation:fadeUpAnime 0.5s ease 0s forwards;
 }
 
 @keyframes fade {
@@ -180,6 +251,18 @@
     }
     100%{
         opacity:1;
+    }
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity:0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity:1;
+        transform:translateY(0);
     }
 }
 
@@ -207,12 +290,21 @@
     }
 }
 
-@keyframes rotateleft {
+@keyframes rotateLeft {
     from {
       transform: rotate(0deg);
     }
     to {
       transform: rotate(-20deg);
+    }
+}
+
+@keyframes rotateRight {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(20deg);
     }
 }
 
