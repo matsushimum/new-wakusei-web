@@ -245,6 +245,20 @@ html,body{
     animation:fadeUpAnime 0.5s ease 0s forwards;
 }
 
+.buttonGoWakusei:hover{
+    cursor:pointer;
+}
+
+/* ここからFAQ */
+.FAQTitle{
+    font-size:10rem;
+    text-align:center;
+}
+
+.question1{
+    text-align:center;
+}
+
 @keyframes fade {
     0%{
         opacity:0;

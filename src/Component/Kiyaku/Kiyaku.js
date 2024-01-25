@@ -1,11 +1,12 @@
 import React from "react";
 import Header from "../Header/Header.js";
+import KiyakuMain from "./KiyakuMain.js";
 
-function Kiyaku(){
+const Kiyaku = () =>{
     return(
         <>
         <Header />
-        <h1>ここは規約です</h1>
+        <KiyakuMain />
         </>
     )
 }

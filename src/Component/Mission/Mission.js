@@ -1,11 +1,12 @@
 import React from 'react';
 import Header from "../Header/Header.js";
+import MissionMain from "./MissionMain.js";
 
-function Mission(){
+const Mission = () => {
     return(
         <>
         <Header />
-        <h1>ここはミッションです</h1>
+        <MissionMain />
         </>
     )
 }
