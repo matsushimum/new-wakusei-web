@@ -20,7 +20,6 @@ html,body{
     font-family:serif;
     margin-top:50px;
     margin-left:400px;
-
 }
 
 .headerKiyaku{
@@ -250,14 +249,212 @@ html,body{
 }
 
 /* ここからFAQ */
+ul{
+    list-style:none;
+}
+
 .FAQTitle{
-    font-size:10rem;
+    font-size:14rem;
     text-align:center;
+    font-family:"yurumoji";
+    color:rgb(36, 36, 36);
+    padding:4rem;
+}
+
+.spanColor{
+    color:#fa8072;
 }
 
 .question1{
+    font-size:2rem;
     text-align:center;
+    font-family:"yurumoji";
+    color:rgb(36, 36, 36);
+    padding:4rem;
+    line-height:3rem;
+    opacity:0;
 }
+
+.question1-fadeUp{
+    animation:fadeUpAnime 0.5s ease 0s forwards;
+}
+
+.question2{
+    font-size:2rem;
+    text-align:center;
+    font-family:"yurumoji";
+    color:rgb(36, 36, 36);
+    padding:4rem;
+    line-height:3rem;
+    opacity:0;
+}
+
+.question2-fadeUp{
+    animation:fadeUpAnime 0.5s ease 0s forwards;
+}
+
+.question3{
+    font-size:2rem;
+    text-align:center;
+    font-family:"yurumoji";
+    color:rgb(36, 36, 36);
+    padding:4rem;
+    line-height:3rem;
+    opacity:0;
+}
+
+.question3-fadeUp{
+    animation:fadeUpAnime 0.5s ease 0s forwards;
+}
+
+.question4{
+    font-size:2rem;
+    text-align:center;
+    font-family:"yurumoji";
+    color:rgb(36, 36, 36);
+    padding:4rem;
+    line-height:3rem;
+    opacity:0;
+}
+
+.question4-fadeUp{
+    animation:fadeUpAnime 0.5s ease 0s forwards;
+}
+
+.MissionTitle{
+    font-size:14rem;
+    text-align:center;
+    font-family:"yurumoji";
+    color:rgb(36, 36, 36);
+    padding:4rem;
+}
+
+.MissionContent1{
+    font-size:2rem;
+    text-align:center;
+    color:rgb(36, 36, 36);
+    padding:4rem;
+    line-height:3rem;
+    opacity:0;
+}
+
+.MissionContent1-fadeUp{
+    animation:fadeUpAnime 0.5s ease 0s forwards;
+}
+
+.MissionContent2{
+    font-size:2rem;
+    text-align:center;
+    color:rgb(36, 36, 36);
+    padding:4rem;
+    line-height:3rem;
+    opacity:0;
+}
+
+.MissionContent2-fadeUp{
+    animation:fadeUpAnime 0.5s ease 0s forwards;
+}
+
+
+.MissionContent3{
+    font-size:2rem;
+    text-align:center;
+    color:rgb(36, 36, 36);
+    padding:4rem;
+    line-height:3rem;
+    opacity:0;
+}
+
+.MissionContent3-fadeUp{
+    animation:fadeUpAnime 0.5s ease 0s forwards;
+}
+
+.MissionContent4{
+    font-size:2rem;
+    text-align:center;
+    font-family:"yurumoji";
+    color:rgb(36, 36, 36);
+    padding:4rem;
+    line-height:3rem;
+    opacity:0;
+}
+
+.MissionContent4-fadeUp{
+    animation:fadeUpAnime 0.5s ease 0s forwards;
+}
+
+.KiyakuTitle{
+    font-size:13rem;
+    text-align:center;
+    color:rgb(36, 36, 36);
+    padding:4rem;
+}
+
+.KiyakuSubTitle{
+    font-size:2rem;
+    text-align:center;
+    color:rgb(36, 36, 36);
+    padding:4rem;
+    line-height:3rem;
+}
+
+.KiyakuContent1{
+    font-size:2rem;
+    text-align:center;
+    color:rgb(36, 36, 36);
+    padding:4rem;
+    line-height:3rem;
+}
+
+.KiyakuContent2{
+    font-size:2rem;
+    text-align:center;
+    color:rgb(36, 36, 36);
+    padding:4rem;
+    line-height:3rem;
+}
+
+.KiyakuContent3{
+    font-size:2rem;
+    text-align:center;
+    color:rgb(36, 36, 36);
+    padding:4rem;
+    line-height:3rem;
+}
+
+.KiyakuContent4{
+    font-size:2rem;
+    text-align:center;
+    color:rgb(36, 36, 36);
+    padding:4rem;
+    line-height:3rem;
+}
+
+.KiyakuContent5{
+    font-size:2rem;
+    text-align:center;
+    color:rgb(36, 36, 36);
+    padding:4rem;
+    line-height:3rem;
+}
+
+.KiyakuContent6{
+    font-size:2rem;
+    text-align:center;
+    color:rgb(36, 36, 36);
+    padding:4rem;
+    line-height:3rem;
+}
+
+.ThatAll{
+    font-size:2rem;
+    text-align:center;
+    color:rgb(36, 36, 36);
+    padding:4rem;
+    line-height:3rem;
+}
+
+
 
 @keyframes fade {
     0%{
