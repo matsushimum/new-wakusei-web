@@ -94,7 +94,7 @@ const MissionMain = () => {
       <h3 className="MissionContent4" id="MissionContent4">
         May the WAKUSEI be with you …
       </h3>
-      <div>
+      <div className="GoBackHome">
         <Link to="/">Homeに戻る</Link>
       </div>
     </>

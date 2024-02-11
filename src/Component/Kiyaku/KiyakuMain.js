@@ -142,7 +142,7 @@ const KiyakuMain = () => {
       <p className="ThatAll" id="ThatAll">
         以上
       </p>
-      <div>
+      <div className="GoBackHome">
         <Link to="/">Homeに戻る</Link>
       </div>
     </>
